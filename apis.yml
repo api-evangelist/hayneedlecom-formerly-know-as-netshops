@@ -1,8 +1,27 @@
 aid: hayneedlecom-formerly-know-as-netshops
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hayneedlecom-formerly-know-as-netshops.png
 name: hayneedle.com (formerly know as NetShops)
-description: hayneedle.com (formerly know as NetShops) is a company surfaced as a portfolio company of
-  insight-partners and added to the API Evangelist network as a stub for enrichment. This profile is a
-  lead awaiting the enrichment pipeline.
+description: >-
+  Hayneedle (formerly NetShops) was an online retailer of home goods, furniture, and outdoor products,
+  founded as NetShops in Omaha, Nebraska in 2002 and rebranded to Hayneedle.com in 2009. It grew into a
+  large specialty e-commerce operator running hundreds of niche home-and-lifestyle storefronts, and was
+  acquired by Jet.com in 2016 for roughly $90 million, becoming a Walmart subsidiary after Walmart bought
+  Jet.com. The standalone brand was subsequently wound down and hayneedle.com now redirects into
+  walmart.com. It was listed as an Insight Partners portfolio company and added to the API Evangelist
+  network as a lead. Enrichment found no first-party public developer surface (no API docs, OpenAPI, SDKs,
+  MCP server, or event surface); the only signal captured is honest DNS/TLS domain-security data for the
+  still-resolving redirect domain.
 url: https://raw.githubusercontent.com/api-evangelist/hayneedlecom-formerly-know-as-netshops/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Retail
+- E-commerce
+- Home Goods
+- Furniture
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hayneedlecom-formerly-know-as-netshops-domain-security.yml
 - type: Website
   url: http://www.hayneedle.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
