@@ -18,19 +18,20 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: http://www.hayneedle.com/
+    status: 307
+    note: declared website redirects to https://www.walmart.com/cp/9791062 — a different registrable domain
+      (hayneedle.com -> walmart.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'http://www.hayneedle.com/', status: 307, note: 'declared website redirects to https://www.walmart.com/cp/9791062 — a different registrable domain (hayneedle.com -> walmart.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hayneedlecom-formerly-know-as-netshops.png
 name: hayneedle.com (formerly know as NetShops)
-description: >-
-  Hayneedle (formerly NetShops) was an online retailer of home goods, furniture, and outdoor products,
-  founded as NetShops in Omaha, Nebraska in 2002 and rebranded to Hayneedle.com in 2009. It grew into a
-  large specialty e-commerce operator running hundreds of niche home-and-lifestyle storefronts, and was
-  acquired by Jet.com in 2016 for roughly $90 million, becoming a Walmart subsidiary after Walmart bought
-  Jet.com. The standalone brand was subsequently wound down and hayneedle.com now redirects into
+description: Hayneedle (formerly NetShops) was an online retailer of home goods, furniture, and outdoor
+  products, founded as NetShops in Omaha, Nebraska in 2002 and rebranded to Hayneedle.com in 2009. It
+  grew into a large specialty e-commerce operator running hundreds of niche home-and-lifestyle storefronts,
+  and was acquired by Jet.com in 2016 for roughly $90 million, becoming a Walmart subsidiary after Walmart
+  bought Jet.com. The standalone brand was subsequently wound down and hayneedle.com now redirects into
   walmart.com. It was listed as an Insight Partners portfolio company and added to the API Evangelist
   network as a lead. Enrichment found no first-party public developer surface (no API docs, OpenAPI, SDKs,
   MCP server, or event surface); the only signal captured is honest DNS/TLS domain-security data for the
@@ -44,7 +45,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-09-15'
 tags:
 - Company
 - Retail
@@ -70,7 +71,9 @@ common:
   url: https://apis.io/providers/jet/
   name: Jet
   x-relationship: acquired
-  x-evidence: "It grew into a large specialty e-commerce operator running hundreds of niche home-and-lifestyle storefronts, and was acquired by Jet.com in 2016 for roughly $90 million, becoming a Walmart subsidiary after Walmart bought Jet."
+  x-evidence: It grew into a large specialty e-commerce operator running hundreds of niche home-and-lifestyle
+    storefronts, and was acquired by Jet.com in 2016 for roughly $90 million, becoming a Walmart subsidiary
+    after Walmart bought Jet.
 - type: DomainSecurity
   url: security/hayneedlecom-formerly-know-as-netshops-domain-security.yml
 - type: Website
@@ -80,3 +83,4 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-status: defunct
